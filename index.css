@@ -1,0 +1,81 @@
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+tr, th, th, table {
+    box-sizing: border-box;
+}
+
+table {
+    border: 1px solid black;
+}
+
+td {
+    width: 200px;
+    /*border-spacing: 2px;*/
+    /*border-collapse: separate;*/
+    padding: 3px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+td:hover {
+  /*чому діє на весь ряд, а не на конкретну тд? */
+    width: 250px;
+    transition: .3s;
+}
+
+tr:first-child {
+    text-align: center;
+    font-size: 1.3em;
+    background: #f0eaea; 
+}
+
+tr:nth-child(2n+4) td {
+    height: 100px;
+    transition: 0.3s;
+}
+
+tr:nth-child(2n+4) td:hover {
+    height: 150px;
+    transition: 0.3s;
+}
+
+tr:nth-child(2n+3) td{
+    text-align: right;
+}
+
+tr:nth-child(1n+2) {
+    background-color: #eddada;
+}
+
+tr:nth-child(2n+3) td:last-child, tr:nth-child(3) td:first-child, tr:nth-child(3) td:nth-child(2), tr:nth-child(4) td:first-child, tr:nth-child(4) td:nth-child(2) {
+    background: #b8b6b6;
+}
+
+tr td:nth-child(6) {
+    background: #f1bcbb;
+}
+
+tr td:nth-child(7) {
+    background: #f49796;
+}
+
+tr:nth-child(1n+2) td:first-child {
+    border-right: 2px solid black;
+    
+}
+
+tr td:nth-child(3) {
+    border-right: 2px solid black;
+    
+}
+
+tr:nth-child(6) td {
+    border-bottom: 2px solid black;
+}
+
+tr:nth-child(7) td, tr:nth-child(8) td {
+    border-top: 2px solid black;
+}
